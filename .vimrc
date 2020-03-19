@@ -55,6 +55,8 @@ autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | en
 
 autocmd vimenter * NERDTree
 
+autocmd VimResized * execute "normal! \<c-w>="
+
 map <F10> :NERDTreeToggle<CR> 	" Toggle nerdtree with F10
 map <F9> :NERDTreeFind<CR>		" Current file in nerdtree
 
